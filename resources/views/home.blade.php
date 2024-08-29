@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaleOfYum - Welcome</title>
+    <title>RasoiGhar - Welcome</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -15,7 +15,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/" style="font-family: 'Lobster', cursive; font-size: 1.8rem; color: #ff6347; animation: fadeInLeft 2s;">TaleOfYum</a>
+            <a class="navbar-brand" href="/" style="font-family: 'Lobster', cursive; font-size: 1.8rem; color: #ff6347; animation: fadeInLeft 2s;">RasoiGhar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,7 +41,7 @@
     <!-- Hero Section -->
     <header class="hero-section text-center text-white d-flex justify-content-center align-items-center" style="height: 100vh; background: url('\public\images\home_image_bg.jpg') center center no-repeat; background-size: cover; animation: fadeIn 2s;">
         <div class="container">
-            <h1 class="display-4" style="font-family: 'Lobster', cursive; font-size: 4rem; color: #fff; animation: fadeInDown 2s;">Welcome to TaleOfYum</h1>
+            <h1 class="display-4" style="font-family: 'Lobster', cursive; font-size: 4rem; color: #fff; animation: fadeInDown 2s;">Welcome to RasoiGhar</h1>
             <p class="lead" style="font-family: 'Nunito', sans-serif; font-size: 1.5rem; animation: fadeInUp 2s; color: #ffd700;">Discover delicious recipes that will make your taste buds dance!</p>
             <a href="#recipes" class="btn btn-lg mt-3" style="background-color: #ff6347; color: white; animation: pulse 2s infinite;">Explore Recipes</a>
         </div>
@@ -50,8 +50,8 @@
     <!-- About Section -->
     <section id="about" class="about-section py-5 text-center" style="background-color: #f8f9fa;">
         <div class="container">
-            <h2 style="font-family: 'Lobster', cursive; color: #ff6347; animation: fadeInLeft 2s;">About TaleOfYum</h2>
-            <p class="lead" style="font-family: 'Nunito', sans-serif; color: #6c757d; animation: fadeInUp 2s;">TaleOfYum is your go-to destination for discovering mouth-watering recipes that are easy to cook and delightful to taste. Join our community of food lovers!</p>
+            <h2 style="font-family: 'Lobster', cursive; color: #ff6347; animation: fadeInLeft 2s;">About RasoiGhar</h2>
+            <p class="lead" style="font-family: 'Nunito', sans-serif; color: #6c757d; animation: fadeInUp 2s;">RasoiGhar is your go-to destination for discovering mouth-watering recipes that are easy to cook and delightful to taste. Join our community of food lovers!</p>
         </div>
     </section>
 
@@ -78,7 +78,7 @@
     <!-- Footer -->
     <footer class="footer py-3 text-center" style="background-color: #343a40; color: white; animation: fadeInUp 2s;">
         <div class="container">
-            <p>&copy; 2024 TaleOfYum. All rights reserved.</p>
+            <p>&copy; 2024 RasoiGhar. All rights reserved.</p>
         </div>
     </footer>
 

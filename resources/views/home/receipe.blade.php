@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Recipes - TaleOfYum</title>
+    <title>View Recipes - RasoiGhar</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -32,7 +32,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/" style="font-family: 'Lobster', cursive; font-size: 1.8rem; color: #ff6347;">TaleOfYum</a>
+            <a class="navbar-brand" href="/" style="font-family: 'Lobster', cursive; font-size: 1.8rem; color: #ff6347;">RasoiGhar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -81,7 +81,7 @@
     <!-- Footer -->
     <footer class="footer py-3 text-center" style="background-color: #343a40; color: white;">
         <div class="container">
-            <p>&copy; 2024 TaleOfYum. All rights reserved.</p>
+            <p>&copy; 2024 RasoiGhar. All rights reserved.</p>
         </div>
     </footer>
 
