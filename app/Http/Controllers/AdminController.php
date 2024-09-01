@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 
 class AdminController extends Controller
 {
@@ -23,9 +26,9 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function showLoginForm()
     {
-        //
+        return view('auth.login');
     }
 
     /**
@@ -34,10 +37,21 @@ class AdminController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
+    public function my_login(Request $request)
+{
+    $credentials = $request->only('email', 'password');
+
+    // Attempt to log the admin in using the custom guard
+    if (Auth::guard('admin')->attempt($credentials)) {
+        return redirect()->intended('admin');
     }
+
+    // Authentication failed
+    return redirect()->back()->withErrors([
+        'email' => 'The provided credentials do not match our records.',
+    ]);
+}
+
 
     /**
      * Display the specified resource.
@@ -45,9 +59,13 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function logout(Request $request)
     {
-        //
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('login');
     }
 
     /**

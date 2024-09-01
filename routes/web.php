@@ -1,9 +1,9 @@
 <?php
-
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RecipeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,14 +15,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//home
 Route::get('/', [HomeController::class, 'index']);
 Route::get('home-recipe', [HomeController::class, 'showReceipe']);
 Route::get('recipe-show/{id}', [HomeController::class, 'show'])->name('home.show');
 //admin dashboard.
-// routes/web.php
-
-
 Route::get('admin', [AdminController::class, 'index']);
 Route::get('recipe', [RecipeController::class, 'index']);
 Route::get('add-recipe', [RecipeController::class, 'create']);
@@ -32,6 +29,13 @@ Route::get('delete-receipe/{id}', [RecipeController::class, 'destroy']);
 Route::get('edit-recipes/{id}', [RecipeController::class, 'edit'])->name('recipes.edit');
 Route::post('update-recipes/{id}', [RecipeController::class, 'update'])->name('recipes.update');
 
-    // Route::post('recipes', [App\Http\Controllers\Admin\RecipeController::class, 'store'])->name('recipes.store');
-   
-    // Route::delete('recipes/{id}', [App\Http\Controllers\Admin\RecipeController::class, 'destroy'])->name('recipes.destroy');
+
+//login
+// Showing the login form
+Route::get('Show-login', [AdminController::class, 'showLoginForm'])->name('loginForm');;
+
+// Handle the login request
+Route::post('my-login', [AdminController::class, 'my_login']);
+
+// Handle logout
+Route::post('logout', [AdminController::class, 'logout'])->name('logout');

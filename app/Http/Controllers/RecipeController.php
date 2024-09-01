@@ -54,13 +54,13 @@ class RecipeController extends Controller
     }
 
     // Create the recipe
-    Recipe::create([
-        'title' => $validatedData['title'],
-        'ingredients' => $validatedData['ingredients'], // Directly store the array
-        'instructions' => $validatedData['instructions'], // Directly store the array
-        'image' => $imagePath,
-    ]);
-       
+    $recipe = new Recipe();
+    $recipe->  title = $request->title;
+    $recipe -> ingredients = $request->ingredients; // Directly store the array
+    $recipe ->  instructions = $request->instructions; // Directly store the array
+    $recipe -> image= $imagePath;
+    $recipe->save();
+    
         return redirect("/view-receipe")->with('success', 'Recipe added successfully!');
     }
 

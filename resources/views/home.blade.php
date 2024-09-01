@@ -10,6 +10,65 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        .hero-section {
+        background-image: url('/public/images/home_image_bg.jpg');
+        }
+        .hero-section {
+            background-size: cover;
+            color: #fff;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card {
+            border-radius: 15px;
+        }
+        .btn-primary {
+            background-color: #ff6347;
+            border-color: #ff6347;
+        }
+        .btn-primary:hover {
+            background-color: #ff4500;
+            border-color: #ff4500;
+        }
+        .footer {
+            background-color: #343a40;
+        }
+        .footer a {
+            color: #ffd700;
+        }
+        .footer a:hover {
+            color: #fff;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -39,11 +98,11 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section text-center text-white d-flex justify-content-center align-items-center" style="height: 100vh; background: url('\public\images\home_image_bg.jpg') center center no-repeat; background-size: cover; animation: fadeIn 2s;">
-        <div class="container">
-            <h1 class="display-4" style="font-family: 'Lobster', cursive; font-size: 4rem; color: #fff; animation: fadeInDown 2s;">Welcome to RasoiGhar</h1>
-            <p class="lead" style="font-family: 'Nunito', sans-serif; font-size: 1.5rem; animation: fadeInUp 2s; color: #ffd700;">Discover delicious recipes that will make your taste buds dance!</p>
-            <a href="#recipes" class="btn btn-lg mt-3" style="background-color: #ff6347; color: white; animation: pulse 2s infinite;">Explore Recipes</a>
+    <header class="hero-section text-center d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="container" >
+            <h1 class="display-4" style="font-family: 'Lobster', cursive; color: #800000; font-size: 4rem; animation: fadeInDown 2s;">Welcome to RasoiGhar</h1>
+            <p class="lead" style="font-family: 'Nunito', sans-serif; font-size: 1.5rem; color: #982B1C; animation: fadeInUp 2s;">Discover delicious recipes that will make your taste buds dance!</p>
+            <a href="{{url('home-recipe')}}" class="btn btn-primary btn-lg mt-3" style="animation: pulse 2s infinite;">Explore Recipes</a>
         </div>
     </header>
 
@@ -54,31 +113,11 @@
             <p class="lead" style="font-family: 'Nunito', sans-serif; color: #6c757d; animation: fadeInUp 2s;">RasoiGhar is your go-to destination for discovering mouth-watering recipes that are easy to cook and delightful to taste. Join our community of food lovers!</p>
         </div>
     </section>
-
-    {{-- Recipe Highlights
-    <section id="recipes" class="recipe-highlights py-5">
-        <div class="container">
-            <h2 class="text-center mb-5" style="font-family: 'Lobster', cursive; color: #ff6347; animation: fadeIn 2s;">Featured Recipes</h2>
-            <div class="row">
-                <!-- Recipe Card -->
-                <div class="col-lg-4 col-md-6 mb-4" style="animation: zoomIn 2s;">
-                    <div class="card recipe-card" style="border: none; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                        <img src="{{ asset('/public/images/home_image_bg.jpg') }}" class="card-img-top" alt="Recipe" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                         <div class="card-body">
-                            <h5 class="card-title" style="font-family: 'Nunito', sans-serif; color: #ff6347;">Delicious Dish</h5>
-                            <p class="card-text" style="font-family: 'Nunito', sans-serif; color: #6c757d;">A delightful blend of flavors that will leave you craving for more.</p>
-                            <a href="{{url('home-recipe')}}" class="btn btn-outline-primary" style="border-color: #ff6347; color: #ff6347;">View Recipe</a>
-                        </div> --}}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="footer py-3 text-center" style="background-color: #343a40; color: white; animation: fadeInUp 2s;">
+    <footer class="footer py-3 text-center" style="background-color: #343a40; color: white; animation: fadeInUp 2s">
         <div class="container">
             <p>&copy; 2024 RasoiGhar. All rights reserved.</p>
+            <a href="{{url('Show-login')}}">Admin Login</a>
         </div>
     </footer>
 
