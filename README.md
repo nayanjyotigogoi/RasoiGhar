@@ -1,35 +1,29 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+Certainly! Below is a similar README format tailored for your RasoiGhar project:
+
+---
+
+<p align="center"><a href="https://github.com/your-username/rasoighar" target="_blank"><img src="https://your-image-url.com/rasoighar-logo.png" width="400" alt="RasoiGhar Logo"></a></p>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<a href="https://travis-ci.org/your-username/rasoighar"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/your-username/rasoighar"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/your-username/rasoighar"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
 ## About RasoiGhar
 
-RasoiGhar is a dynamic and visually appealing food recipe website built with Laravel 8. It allows admins to add and manage recipes, while users can browse and view recipes with ease. The site features a responsive design and an intuitive user interface.
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**RasoiGhar** is a dynamic and visually appealing food recipe website built with Laravel 8. It enables admins to add and manage recipes, while users can effortlessly browse and view recipes. The website boasts a responsive design and an intuitive user interface, ensuring a seamless experience across devices.
 
 ## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+If you're new to Laravel, the official [documentation](https://laravel.com/docs) is an excellent resource to get started. Laravel has comprehensive documentation that covers every aspect of the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+For video tutorials, check out [Laracasts](https://laracasts.com), which offers over 1500 videos on Laravel, modern PHP, unit testing, and more. It's a great way to dive deep into the framework.
 
 ## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Laravel is supported by a wonderful community and sponsors. Here are some of the key supporters:
 
 ### Premium Partners
 
@@ -49,16 +43,20 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+We welcome contributions to the RasoiGhar project! Whether it's a bug fix, new feature, or improvement, your input is highly appreciated. Please review our [contribution guidelines](https://github.com/your-username/rasoighar/blob/main/CONTRIBUTING.md) before making a pull request.
 
 ## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+We strive to create a welcoming and inclusive environment for everyone. Please adhere to our [Code of Conduct](https://github.com/your-username/rasoighar/blob/main/CODE_OF_CONDUCT.md) to maintain a positive atmosphere.
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+If you find a security vulnerability in RasoiGhar, please report it to us by sending an email to [your-email@example.com](mailto:your-email@example.com). We will address all security concerns promptly.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+RasoiGhar is an open-source project licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+---
+
+Replace placeholders like `your-username`, `your-image-url.com`, and `your-email@example.com` with your actual GitHub username, image URLs, and email address. This format mirrors the style of Laravel's official README while adapting it to your RasoiGhar project.
